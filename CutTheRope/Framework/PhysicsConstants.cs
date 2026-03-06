@@ -10,17 +10,28 @@ namespace CutTheRope.Framework
         public const float GravityEarthY = 784f; // 9.8 * 80 (PIXEL_TO_SI_METERS_K)
         public const float RopePhysicsSpeedMultiplier = 1.4f;
         public const float BungeeRestLength = 105f;
+        public const float BungeeRollBackOverflowPadding = 1f;
+        public const float BungeeConstraintSlack = 3f;
+        public const float BungeeRelaxThresholdSoft = 0.3f;
+        public const float BungeeRelaxThresholdMedium = 1f;
+        public const float BungeeRelaxThresholdHard = 4f;
+        public const float BungeeStretchRedThreshold = 7f;
+        public const int BungeeDrawSamplePoints = 4;
 
         // Bubble impulse
         public const float BubbleImpulseY = -40f;
         public const float BubbleImpulseDamping = 14f;
+        public const float BubbleCaptureRadius = 85f;
 
         // Candy
         public const float CandyBreakGravityY = 500f;
+        public const float CandyGrabPadding = 42f;
 
         // Magic hat / sock
         public const float SockTeleportSpeedMultiplier = 1.4f;
         public const float SockSpeedKoeff = 0.9f;
+        public const float GrabRopeRollMaxLength = 1650f;
+        public const float GrabWheelRotateDeltaMax = 4.5f;
 
         // Water tuning
         public const float WaterSurfaceDetectionHeight = 2f;
@@ -51,6 +62,9 @@ namespace CutTheRope.Framework
         public const float SteamTubeGravityCompensation = -32f;
         public const float SteamTubeSideGravityDivisor = 4f;
         public const float SteamTubeOppositeGravityDivisor = 2f;
+
+        // Spider
+        public const float SpiderTraversalSpeed = 117f;
 
         // Conveyor-belt velocity scaling
         public const float ConveyorVelocityScale = 0.4f;
